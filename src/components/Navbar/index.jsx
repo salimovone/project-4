@@ -45,8 +45,8 @@ const Navbar = () => {
   if (deviceWidth > 994) {
     return (
       <div
-        className={`w-full flex items-center h-[70px] px-[120px] ${
-          scrollPosition > windowHeight ? "fixed bg-[#fff] top-0 z-50" : "bg-black"
+        className={`w-full flex items-center bg-[#fff] h-[70px] px-[120px] ${
+          scrollPosition > windowHeight ? "fixed top-0 z-50" : null
         }`}
       >
         <div className="flex justify-between w-full">
@@ -86,22 +86,22 @@ const Navbar = () => {
     );
   } else {
     return (
-      <div className={`z-[${9**999}] px-[120px] w-full bg-[#fff] ${deviceWidth<640?"px-[20px]":"px-[120px]"} ${
-        scrollPosition > windowHeight ? "fixed top-0 z-50" : null
+      <div className={`z-[${9**999}] px-[120px] w-full ${deviceWidth<640?"px-[20px]":"px-[120px]"} ${
+        scrollPosition > windowHeight ? "bg-[#fff] fixed top-0 z-50" : "bg-black text-white"
       }`}>
         <div
-          className={`w-full flex z-50 items-center h-[70px] bg-[#fff]`}
+          className={`w-full flex z-50 items-center h-[70px] bg-inherit`}
         >
           <div className="flex justify-between w-full">
             <a className="font-bold text-[20px]" href="./">
               Even<span className={`font-black`}>Talk.</span>
             </a>
           </div>
-          <button onClick={()=>hamburger()} className="text-[30px] flex items-center rounded-sm"><BiMenu /> Menu</button>
+          <button onClick={()=>hamburger()} className="text-[30px] flex items-center rounded-sm"><BiMenu /> <span className="text-base">MENU</span></button>
         </div>
         {isOpened?(
 
-            <div className={`w-full bg-white py-2 border-t-[1px]`}>
+            <div className={`w-full bg-inherit py-2 border-t-[1px]`}>
               <div className="text-[#645f88bf] text-[16px]">
                 <div className="mt-1">
                   <NavLink
