@@ -21,3 +21,21 @@ code {
 .active{
   color: #00000080;
 }
+
+
+.w-full > .max{
+  max-width: 1366px;
+  margin: auto;
+  padding-inline: 120px;
+}
+
+@media screen and (max-width: 1024px){
+  .w-full > .max{
+    padding-inline: 45px;
+  }
+}
+@media screen and (max-width: 425px){
+  .w-full > .max{
+    padding-inline: 10px;
+  }
+}
