@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import Home from "./views/Home";
 
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );

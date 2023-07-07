@@ -36,7 +36,7 @@ code {
 }
 @media screen and (max-width: 425px){
   .w-full > .max{
-    padding-inline: 10px;
+    padding-inline: 20px;
   }
 }
 
