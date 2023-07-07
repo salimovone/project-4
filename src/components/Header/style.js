@@ -7,4 +7,11 @@ export const Main = styled.div`
     height: 100vh;
     z-index: -1;
     background-size: cover;
+    .banner{
+        color: #6b76ff;
+        .--border{
+            border-left: 1px solid lightgray;
+            padding-left: 30px;
+        }
+    }
 `
