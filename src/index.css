@@ -39,3 +39,13 @@ code {
     padding-inline: 10px;
   }
 }
+
+.header-overlay{
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(45deg, #6b75ff 0%, #6b75ff 0%, #59b7ff 100%);
+  opacity: 0.1;
+  /* margin-top: -70px; */
+}
