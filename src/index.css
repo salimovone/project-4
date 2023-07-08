@@ -29,14 +29,26 @@ code {
   padding-inline: 120px;
 }
 
+.carousel1 > .swiper-wrapper {
+  height: 480px !important;
+}
+
 @media screen and (max-width: 1024px){
   .w-full > .max{
     padding-inline: 45px;
   }
 }
+@media screen and (max-width: 750px){
+  .carousel1 > .swiper-wrapper {
+    height: 380px !important;
+  }
+}
 @media screen and (max-width: 425px){
   .w-full > .max{
     padding-inline: 20px;
+  }
+  .carousel1 > .swiper-wrapper {
+    height: 280px !important;
   }
 }
 
@@ -48,4 +60,20 @@ code {
   background: linear-gradient(45deg, #6b75ff 0%, #6b75ff 0%, #59b7ff 100%);
   opacity: 0.1;
   /* margin-top: -70px; */
+}
+
+.carousel1{
+  max-width: 1000px !important;
+  width: 100%;
+}
+
+.carousel1 .swiper-pagination-bullet{
+  border: 2px solid;
+  background: #0006 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-slide:hover .card-icon{
+  display: flex;
 }
